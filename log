@@ -29,3 +29,16 @@ test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
       |     ^~~~
 cc1: all warnings being treated as errors
 aef728c
+Mon May  4 02:18:53 AM UTC 2026: 
+ treemap.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:65:23: error: ‘TreeMap’ has no member named ‘left’
+   65 |             aux = tree->left;
+      |                       ^~
+treemap.c:68:23: error: ‘TreeMap’ has no member named ‘right’
+   68 |             aux = tree->right;
+      |                       ^~
+1c36af1
