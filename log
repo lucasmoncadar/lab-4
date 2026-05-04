@@ -4,3 +4,28 @@ Thu Apr 30 08:39:58 PM UTC 2026:
  tests:  4|7
 total_score: 5/60
 252c41a
+Mon May  4 02:17:01 AM UTC 2026: 
+ treemap.c | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+Compilation failed
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:65:23: error: ‘TreeMap’ has no member named ‘left’
+   65 |             aux = tree->left;
+      |                       ^~
+treemap.c:68:23: error: ‘TreeMap’ has no member named ‘right’
+   68 |             aux = tree->right;
+      |                       ^~
+test.c:503:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:606:1: error: expected declaration or statement at end of input
+  606 | }
+      | ^
+test.c:607: error: control reaches end of non-void function [-Werror=return-type]
+test.c: At top level:
+test.c:503:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  503 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1: all warnings being treated as errors
+aef728c
